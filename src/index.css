@@ -31,6 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #edf2f4;
   margin-bottom: 5rem;
 }
@@ -46,10 +47,14 @@ nav {
   color: black;
 }
 
+.nav-links a:nth-child(1):hover {
+  color: #8d99ae;
+}
+
 .nav-links a:nth-child(2) {
   background: #ef233c;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: background 0.3s ease-in-out;
   white-space: nowrap;
 }
@@ -71,6 +76,7 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .blog-preview:hover,
@@ -83,9 +89,27 @@ nav {
   font-weight: 600;
 }
 
-.blog-preview p:last-child {
+.blog-preview p:nth-child(3),
+.blog-preview button {
   font-size: 0.8rem;
-  font-weight: 500;
   padding-top: 0.2rem;
   color: #8d99ae;
+}
+
+.blog-preview button {
+  position: absolute;
+  bottom: 20%;
+  right: 2%;
+  outline: none;
+  border: none;
+  background: #2b2d42;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.blog-preview button:hover {
+  background: #3e415d;
 }
