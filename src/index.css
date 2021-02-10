@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
+/* global styles */
 html {
   font-size: 100%;
 }
@@ -24,6 +25,7 @@ a {
   text-decoration: none;
 }
 
+/* nav styles */
 nav {
   min-height: 12vh;
   display: flex;
@@ -35,6 +37,7 @@ nav {
 
 .logo {
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 .nav-links a {
@@ -48,12 +51,41 @@ nav {
   color: white;
   border-radius: 5px;
   transition: background 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .nav-links a:nth-child(2):hover {
-  background: #f14055;
+  background: #d90429;
 }
 
+/* home styles */
 .content h2 {
   text-align: center;
+  padding-bottom: 4rem;
+}
+
+.blog-preview {
+  background: #f3f7f8;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-preview:hover,
+.blog-preview:focus {
+  box-shadow: 1px 1px 10px rgba(141, 153, 174, 0.3);
+}
+
+.blog-preview h3 {
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.blog-preview p:last-child {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-top: 0.2rem;
+  color: #8d99ae;
 }
