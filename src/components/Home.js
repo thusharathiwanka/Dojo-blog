@@ -25,6 +25,13 @@ const Home = () => {
         "If you’re an Android user, go see if your Google Messages app now has the power to...",
       author: "Joe Jones",
     },
+    {
+      id: 4,
+      title: "Must-have accessories for your new iPhone XR",
+      content:
+        "After spending a substantial chunk of change on a new phone, the idea of spending any more..",
+      author: "Chris Smith",
+    },
   ]);
 
   const handleDelete = (blogID) => {
