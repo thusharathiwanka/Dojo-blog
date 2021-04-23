@@ -20,8 +20,8 @@ const Home = () => {
   return (
     <div className="home-content">
       <h2>All Blogs</h2>
-      {error && <p style={errorStyles}>{error}</p>}
-      {isPending && <p style={commonStyles}>Loading...</p>}
+      {error && <p className="notify error">{error}</p>}
+      {isPending && <p className="notify">Loading...</p>}
       {blogs && <BlogPreview blogs={blogs} handleDelete={handleDelete} />}
     </div>
   );
