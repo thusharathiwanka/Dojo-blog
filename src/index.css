@@ -70,6 +70,10 @@ nav {
   padding-bottom: 4rem;
 }
 
+.form-content h2 {
+  padding-bottom: 2.5rem;
+}
+
 .blog-preview {
   background: #f3f7f8;
   padding: 1.5rem 2rem;
@@ -124,7 +128,7 @@ nav {
   background: #3e415d;
 }
 
-/* new blog styles */
+/* create blog styles */
 .new-blog-form {
   display: flex;
   flex-direction: column;
@@ -157,6 +161,7 @@ nav {
   padding-bottom: 0.5rem;
 }
 
+/* notification styles */
 .notify {
   text-align: center;
   padding-top: 10rem;

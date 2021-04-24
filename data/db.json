@@ -23,6 +23,18 @@
       "title": "Must-have accessories for your new iPhone XR",
       "content": "After spending a substantial chunk of change on a new phone, the idea of spending any more..",
       "author": "Chris Smith"
+    },
+    {
+      "title": "Test title",
+      "content": "Test content",
+      "author": "Test author",
+      "id": 5
+    },
+    {
+      "title": "Test 2",
+      "content": "Ters",
+      "author": "dfsfs",
+      "id": 6
     }
   ]
 }
