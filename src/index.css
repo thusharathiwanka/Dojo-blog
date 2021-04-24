@@ -102,7 +102,8 @@ nav {
 
 .blog-preview button,
 .new-blog-form button,
-.blog-details button {
+.blog-details button,
+.not-found button {
   outline: none;
   border: none;
   background: #2b2d42;
@@ -126,7 +127,8 @@ nav {
 
 .blog-preview button:hover,
 .new-blog-form button:hover,
-.blog-details button:hover {
+.blog-details button:hover,
+.not-found button:hover {
   background: #3e415d;
 }
 
@@ -171,4 +173,15 @@ nav {
 
 .error {
   color: #d90429;
+}
+
+/* 404 styles*/
+.not-found {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.not-found p {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
