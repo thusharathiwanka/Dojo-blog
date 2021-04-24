@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "Apple may be giving up on the iPhone 12 mini",
-      "content": "To appease iPhone fans, Apple included a smaller version of the phone in its iPhone 12 lineup...",
-      "author": "Kevin Raposo"
-    },
-    {
       "id": 2,
       "title": "Coumi ANC-860 earbuds are a perfect all-round option",
       "content": "Ever since the days of my Sony Walkman, I have always preferred over-heads as opposed to...",
@@ -23,18 +17,6 @@
       "title": "Must-have accessories for your new iPhone XR",
       "content": "After spending a substantial chunk of change on a new phone, the idea of spending any more..",
       "author": "Chris Smith"
-    },
-    {
-      "title": "Test title",
-      "content": "Test content",
-      "author": "Test author",
-      "id": 5
-    },
-    {
-      "title": "Test 2",
-      "content": "Ters",
-      "author": "dfsfs",
-      "id": 6
     }
   ]
 }

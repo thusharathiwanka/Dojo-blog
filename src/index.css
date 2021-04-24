@@ -101,7 +101,8 @@ nav {
 }
 
 .blog-preview button,
-.new-blog-form button {
+.new-blog-form button,
+.blog-details button {
   outline: none;
   border: none;
   background: #2b2d42;
@@ -124,7 +125,8 @@ nav {
 }
 
 .blog-preview button:hover,
-.new-blog-form button:hover {
+.new-blog-form button:hover,
+.blog-details button:hover {
   background: #3e415d;
 }
 

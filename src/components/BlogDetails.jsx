@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router";
+import { useState } from "react";
+import { useParams, useHistory } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
 
 function BlogDetails() {
@@ -7,6 +7,17 @@ function BlogDetails() {
   const { data: blog, error, isPending } = useFetch(
     `http://localhost:8000/blogs/${id}`
   );
+  const history = useHistory();
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const handleDelete = () => {
+    setIsDeleting(true);
+    fetch(`http://localhost:8000/blogs/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      history.push("/");
+    });
+  };
 
   return (
     <div className="blog-details">
@@ -19,8 +30,13 @@ function BlogDetails() {
           </h2>
           <p style={{ paddingBottom: "2rem" }}>By {blog.author}</p>
           <div className="blog-content">
-            <p style={{ width: "100%" }}>{blog.content}</p>
+            <p style={{ paddingBottom: "2rem" }}>{blog.content}</p>
           </div>
+          {!isDeleting ? (
+            <button onClick={handleDelete}>Delete</button>
+          ) : (
+            <button disabled>Deleting</button>
+          )}
         </article>
       )}
     </div>
